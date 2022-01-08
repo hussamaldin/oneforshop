@@ -89,6 +89,7 @@
             </div>
             <div class="flex flex-col space-y-4 w-[60%]">
                 <div class="border-gray-400 shadow text-left text-2xl p-8 mb-6 bg-white">
+                    <div class="mb-4 text-2xl">General information</div>
                     <div class="flex flex-col">
                     <div class="flex flex-row justify-between mb-2">
                         <div class="p-4 w-[50%] text-left text-lg font-bold">

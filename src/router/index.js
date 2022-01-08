@@ -6,12 +6,18 @@ import Signup from '../components/Signup.vue'
 import Login from '../components/Login.vue'
 import Profile from '../components/Profile.vue'
 import Setting from '../components/Setting.vue'
+import Users from '../components/Users.vue'
 const routes = [
   {
     path:"/",
     name:"home",
     component:Home
 
+  },
+  {
+    path:"/users",
+    name:"users",
+    component:Users
   },
   {
     path:"/setting",

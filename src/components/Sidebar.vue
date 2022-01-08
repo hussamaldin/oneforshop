@@ -9,18 +9,18 @@
             </div>
           </form>
         </li>
-        <li><a href="/profile" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>profile</a></li>
-        <li><a href="login" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Login</a></li>
+        <li><a href="/profile" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa-user w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>profile</a></li>
+        <li><a href="login" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa-sign-in w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Sign in</a></li>
         <li><a href="/" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa-inbox w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Inbox</a></li>
         <li x-data="{ open: false }"><a href="/product" class="text-xl text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span  @click="open = true" class="p-2">
             <i class="fa fa-shopping-bag w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Product<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
             <ul x-cloak x-show="open">
-        <li><a href="/setting" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Setting</a></li>
-        <li><a href="/billing" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Pilling</a></li>
+        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Setting</a></li>
+        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Pilling</a></li>
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Invoice</a></li>
             </ul>
         </li>
-        <li x-data="{ open: false }"><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
+        <li x-data="{ open: false }"><a href="/users" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
             <i class="fa fa-group w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Users<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
             <ul x-cloak x-show="open">
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>User List</a></li>
@@ -28,19 +28,19 @@
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Setting</a></li>
             </ul>
         </li>
-        <li x-data="{ open: false }"><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
-            <i class="fa fa-file w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Pages<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
+        <li x-data="{ open: false }"><a href="/billing" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
+            <i class="fa fa-file w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Billing<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
             <ul x-cloak x-show="open">
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Pricing</a></li>
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Maintenance</a></li>
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Looping</a></li>
             </ul>
         </li>
-        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
-            <i class="fa fa-lock w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Authentication<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
+        <li><a href="/setting" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2">
+            <i class="fa fa-lock w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Setting<i class="fa fa-angle-down ml-2 text-2xl font-bold"></i></a>
             <ul>
-        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded0-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Sign in</a></li>
-        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Sign up</a></li>
+        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded0-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Sign up</a></li>
+        <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>Authentecation</a></li>
         <li><a href="#" class="text-xl font-normal text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"><span class="p-2"><i class="fa fa bell w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"></i></span>ForgetPassword</a></li>
             </ul>
         </li>

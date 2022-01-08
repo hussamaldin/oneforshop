@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-full bg-gray-100 p-4">
-        <div class="text-3xl font-bold text-left p-2">Profile</div>
+        <div class="text-2xl font-bold text-left p-2">Profile</div>
         <div class="flex flex-row justify-between mb-8">
             <div class="flex flex-col space-y-4 w-[35%]">
                 <div class="border-gray-400 shadow text-left p-4 bg-white">

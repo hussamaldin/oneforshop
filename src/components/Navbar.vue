@@ -23,7 +23,7 @@
                    <img :src="img1" class="w-[60px] h-[60px] rounded-full">
                    </div>
                    <div class="mx-4 p-2">
-                   <button class="w-[160px] h-[60px] bg-blue-500 rounded hover:bg-blue-700 text-white text-2xl">By now</button>
+                   <button class="w-[140px] h-[45px] bg-blue-500 rounded hover:bg-blue-700 text-white text-xl">By now</button>
                    </div>
                
                
