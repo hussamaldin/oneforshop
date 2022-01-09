@@ -2,7 +2,7 @@
   <div class=" relative w-full h-full">
     <Navbar />
     <Sidebar />
-    <div class="h-full pt-[100px] ml-[300px] bg-white">
+    <div class="h-full pt-[100px] ml-[280px] bg-white">
      <router-view/>
     </div>
 
