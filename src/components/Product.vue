@@ -1,37 +1,37 @@
 <template>
     <div class="h-full w-full">
         <!--Popup Forms--><div :class="add?'absolute w-full h-full bg-gray-500 bg-opacity-50 top-0 left-0 overflow-y-auto z-50':'absolute w-full h-full hidden bg-gray-500 bg-opacity-50 top-0 left-0 overflow-y-auto z-50' ">
-            <div class="fixed top-[12px] bg-white p-1 rounded-lg left-[400px] border border-gray-300 shadow w-[800px] h-[800px]">
+            <div class="fixed top-[12px] bg-white p-1 rounded-lg left-[400px] border border-gray-300 shadow w-[800px] h-[740px]">
                 <div class="w-full text-2xl border-b border-gray-300 flex flex-row justify-between p-4 mb-3"><span >Add User</span><span @click="add=!add" class="cursor-pointer hover:bg-gray-200 rounded px-2 hover:text-gray-600 text-gray-400 text-2xl font-bold">X</span></div>
                 <div class="flex flex-col">
                     <div class="flex flex-row justify-between mb-1">
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Category</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
                     </div>
                     <div class="flex flex-row justify-between mb-1">
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Brand</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Price</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
                     </div>
                     <div class="w-full mb-1">
-                        <div class="p-2 w-[100%] text-left text-lg font-bold">
+                        <div class="p-2 w-[100%] text-left text-sm font-bold">
                         <label class="block">Product Details</label>
-                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[160px]"></textarea>
+                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[140px]"></textarea>
                         </div>
                     </div>
-                    <div class="w-full p-2">
-                        <div class="w-full flex cursor-pointer items-center justify-center relative p-2 h-[180px] border border-gray-300">
+                    <div class="w-full p-2 mb-2">
+                        <div class="w-full flex cursor-pointer items-center justify-center relative p-2 h-[160px] border border-gray-300">
                             <input type="file" class=" opacity-0 w-full h-full">
                             <span class="absolute top-[49%] z-10 left-[44%]">Drag And Drop</span>
                         </div>
@@ -43,36 +43,36 @@
         </div>
 
         <div :class="edit?'absolute w-full h-full  bg-gray-500 bg-opacity-50 top-0 left-0 overflow-y-auto z-50':'absolute w-full h-full hidden bg-gray-500 bg-opacity-50 top-0 left-0 overflow-y-auto z-50' ">
-            <div class="fixed top-[20px] bg-white rounded-lg left-[400px] border border-gray-300 shadow w-[800px] h-[800px]">
+            <div class="fixed top-[20px] bg-white rounded-lg left-[400px] border border-gray-300 shadow w-[800px] h-[740px]">
                 <div class="flex flex-col">
                     <div class="flex flex-row justify-between mb-2">
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
                     </div>
                     <div class="flex flex-row justify-between mb-2">
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
-                        <div class="p-4 w-[50%] text-left text-lg font-bold">
+                        <div class="p-4 w-[50%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
                         <input type="text" class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-[90%] rounded-lg h-[45px]" placeholder="Product">
                         </div>
                     </div>
-                    <div class="w-full mb-2">
-                        <div class="p-4 w-[100%] text-left text-lg font-bold">
+                    <div class="w-full mb-3">
+                        <div class="p-4 w-[100%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
-                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[180px]"></textarea>
+                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[160px]"></textarea>
                         </div>
                     </div>
                     <div class="w-full p-4">
-                        <div class="w-full flex cursor-pointer items-center justify-center relative p-4 h-[200px] border border-gray-300">
+                        <div class="w-full flex cursor-pointer items-center justify-center relative p-4 h-[180px] border border-gray-300">
                             <input type="file" class=" opacity-0 w-full h-full">
                             <span class="absolute top-[49%] z-10 left-[44%]">Drag And Drop</span>
                         </div>

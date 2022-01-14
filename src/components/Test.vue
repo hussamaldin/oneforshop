@@ -6,7 +6,7 @@
                 <div class="w-[80%] h-full rounded"><img :src="currentImage"  class="w-full h-full rounded transition ease-in-out duration-700"></div>
                 <div class="w-[10%] h-full bg-gray-100 cursor-pointer flex justify-center items-center group hover:bg-gray-200" @click="next()"><span><i class="fa fa-angle-right group-hover:text-4xl text-2xl font-bold"></i></span></div>
             </div>
-            <div class="w-full h-[250px] overflow-auto inline-block">
+            <div class="w-full h-[250px] overflow-auto inline">
                 <img v-for="(img ,index) in images" :key="index" @click="activateImage(index)" :src="img.big" :class="['inline cursor-pointer w-[250px] h-full', (activeImage == index) ? 'opacity-90' : '']">
             </div>
         </div>
@@ -118,25 +118,25 @@ export default {
                     {
                         id:'5',
                         name:"Hussam",
-                        gender:"male",
+                        gender:"Male",
                         age:"22"
                     },
                     {
                         id:'6',
                         name:"Ali",
-                        gender:"male",
+                        gender:"Male",
                         age:"18"
                     },
                     {
                         id:'7',
                         name:"Mohamed",
-                        gender:"male",
+                        gender:"Male",
                         age:"30"
                     },
                     {
                         id:'8',
                         name:"Omer",
-                        gender:"male",
+                        gender:"Male",
                         age:"25"
                     },
                     {
@@ -160,7 +160,7 @@ export default {
                     {
                         id:'12',
                         name:"Yasir",
-                        gender:"male",
+                        gender:"Male",
                         age:"22"
                     },
                     {
@@ -200,6 +200,7 @@ export default {
                  drop=drop.filter((dat) => dat.age === this.tage)
                 }
                  return drop;
+                 
             }
         },
     currentImage(){

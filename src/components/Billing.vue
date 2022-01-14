@@ -3,13 +3,13 @@
         <div class="w-full text-2xl mb-4 font-bold text-left">Billing</div>
         <div class="flex flex-row justify-between bg-gray-100 rounded shadow-lg mb-8">
             <div class="flex flex-col border border-gray-100 bg-white shadow-lg text-left p-4 w-[49%]">
-                <div class="flex flex-row mb-2 items-center w-full text-2xl font-bold p-1"><img :src="img" class="w-[60px] rounded-full h-[60px] mr-1 ml-4"><span class="text-xl text-blue-300">OneForShop</span></div>
-                <div class="mb-2 w-full text-xl font-bold p-1"><p class="text-gray-300">Switch your subscription to a different type, such as a monthly plan, annual plan, or student plan. And see a list of subscription plans that Windster Pro offers</p></div>
-                <div class="mb-2 w-full p-1 text-xl font-bold"><p>llkmglskmdd qwdwqd vlksdmvlkds</p></div>
-                <div class="flex flex-row w-full p-1 justify-start text-xl font-bold"><button class="bg-blue-400 rounded-xl text-white hover:bg-blue-500 p-2 w-[230px]"><i class="fa fa-file-text-o mr-1"></i>change plane</button><button class="hover:bg-gray-100 border border-gray-400 rounded-xl ml-4 p-2 w-[230px]">cancle subscription</button></div>
+                <div class="flex flex-row mb-2 items-center w-full text-xl font-bold p-1"><img :src="img" class="w-[50px] rounded-full h-[50px] mr-1 ml-4"><span class="text-xl text-blue-300">OneForShop</span></div>
+                <div class="mb-2 w-full text-lg font-bold p-1"><p class="text-gray-300">Switch your subscription to a different type, such as a monthly plan, annual plan, or student plan. And see a list of subscription plans that Windster Pro offers</p></div>
+                <div class="mb-2 w-full p-1 text-lg font-bold"><p>llkmglskmdd qwdwqd vlksdmvlkds</p></div>
+                <div class="flex flex-row w-full p-1 justify-start text-lg font-bold"><button class="bg-blue-400 rounded-xl text-white hover:bg-blue-500 p-2 w-[230px]"><i class="fa fa-file-text-o mr-1"></i>change plane</button><button class="hover:bg-gray-100 border border-gray-400 rounded-xl ml-4 p-2 w-[230px]">cancle subscription</button></div>
             </div>
             <div class="flex flex-col border border-gray-100 bg-white shadow-lg text-left p-4 w-[49%]">
-                <div class="flex flex-row justify-between"><p class="text-xl font-bold">Order History</p><p class="text-blue-400 p-1 rounded-xl text-lg font-bold hover:bg-gray-100">View all</p></div>
+                <div class="flex flex-row justify-between"><p class="text-lg font-bold">Order History</p><p class="text-blue-400 p-1 rounded-xl text-lg font-bold hover:bg-gray-100">View all</p></div>
                 <div class="overflow-auto">
                     <table class="table-fixed w-full px-3">
          <thead class="text-lg font-semibold uppercase text-gray-400 bg-gray-50">
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="text-left p-4 bg-white mb-8 rounded shadow-lg">
-            <div class="text-left font-bold text-2xl mb-3">General Information</div>
+            <div class="text-left font-bold text-xl mb-3">General Information</div>
             <div class="h-auto">
             <div class="flex flex-row justify-between p-2">
             <div class="flex flex-col w-[31%] h-[400px]">
@@ -133,7 +133,7 @@
             <div class="text-left"><button class="w-[120px] p-2 bg-blue-400 text-white text-lg font-bold rounded-xl">Update</button></div>
         </div>
         <div class="text-left p-4 bg-white shadow-lg mb-8 rounded">
-            <div class="text-left font-bold text-2xl mb-3">General Information</div>
+            <div class="text-left font-bold text-xl mb-3">General Information</div>
             <div class="flex flex-row justify-between p-2">
             <div class="flex flex-col w-[49%]">
                 <div class="mb-2 p-2 w-full">

@@ -1,5 +1,5 @@
 <template x-if="true">
-    <div class="p-4 overflow-y-auto bg-white fixed top-[100px] left-0 h-[682px] w-[280px] border-r border-gray-300">
+    <div class="p-4 overflow-y-auto bg-white fixed top-[75px] left-0 h-[705px] w-[260px] border-r border-gray-300">
     <ul class="space-y-2 pd-2 text-xl"> 
         <li>
           <form action="#" method="GET" class="lg:hidden">
