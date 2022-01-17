@@ -27,7 +27,7 @@
                     <div class="w-full mb-1">
                         <div class="p-2 w-[100%] text-left text-sm font-bold">
                         <label class="block">Product Details</label>
-                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[140px]"></textarea>
+                        <textarea class="border-2 resize-none border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[140px]"></textarea>
                         </div>
                     </div>
                     <div class="w-full p-2 mb-2">
@@ -68,7 +68,7 @@
                     <div class="w-full mb-3">
                         <div class="p-4 w-[100%] text-left text-sm font-bold">
                         <label class="block">Product Name</label>
-                        <textarea class="border-2 border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[160px]"></textarea>
+                        <textarea class="border-2 resize-none border-gray-300 p-1 outline-none focus:border-indigo-300 bg-gray-100 w-full h-[160px]"></textarea>
                         </div>
                     </div>
                     <div class="w-full p-4">
@@ -144,7 +144,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -164,7 +164,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -184,7 +184,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -204,7 +204,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -224,7 +224,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -244,7 +244,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -264,7 +264,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -284,7 +284,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -304,7 +304,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -324,7 +324,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -344,7 +344,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -364,7 +364,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -384,7 +384,7 @@
                                     <div class="text-lg text-center">$1,200.80</div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-2 text-lg rounded"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-2 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-lg rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             </tbody>

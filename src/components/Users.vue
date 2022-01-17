@@ -171,7 +171,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -191,7 +191,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-red-500 mr-2"></span><span>Offline</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -211,7 +211,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -231,7 +231,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -251,7 +251,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-red-500 mr-2"></span><span>Offline</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -271,7 +271,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -291,7 +291,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -311,7 +311,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -331,7 +331,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -351,7 +351,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-red-500 mr-2"></span><span>Offline</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -371,7 +371,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             <tr class="border-b border-gray-100 py-4 hover:bg-gray-100">
@@ -391,7 +391,7 @@
                                     <div class="text-lg flex flex-row items-center justify-center"><span class="w-[10px] h-[10px] rounded-full bg-green-500 mr-2"></span><span>Active</span></div>
                                 </td>
                                 <td class="py-4 whitespace-nowrap">
-                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
+                                    <button @click="edit=!edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-[140px] p-1 text-sm rounded-lg"><i class="fa fa-edit pr-2 text-xl"></i>Edit Item</button><button @click="del=!del" class="ml-2 p-1 bg-red-500 hover:bg-red-700 text-white font-bold w-[140px] text-sm rounded-lg"><i class="fa fa-trash pr-2 text-xl"></i>Delete Item</button>
                                 </td>
                             </tr>
                             </tbody>

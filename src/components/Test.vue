@@ -1,13 +1,12 @@
 <template>
     <div class="flex items-center justify-center p-4">
-        <div class="w-[700px] flex flex-col border rounded border-gray-200 overflow-hidden">
+        <div class="w-[1000px] flex flex-col border rounded border-gray-200 overflow-hidden">
             <div class="flex flex-row h-[350px]">
-                <div class="w-[10%] h-full bg-gray-100 cursor-pointer flex justify-center items-center group hover:bg-gray-200" @click="prev()"><span><i class="fa fa-angle-left group-hover:text-4xl text-2xl font-bold"></i></span></div>
-                <div class="w-[80%] h-full rounded"><img :src="currentImage"  class="w-full h-full rounded transition ease-in-out duration-700"></div>
-                <div class="w-[10%] h-full bg-gray-100 cursor-pointer flex justify-center items-center group hover:bg-gray-200" @click="next()"><span><i class="fa fa-angle-right group-hover:text-4xl text-2xl font-bold"></i></span></div>
+                <div class="w-[10%] h-full bg-gray-100 cursor-pointer flex justify-center items-center group hover:bg-gray-200" @click="scroll_left()"><span><i class="fa fa-angle-left group-hover:text-4xl text-2xl font-bold"></i></span></div>
+                <div class="hussam flex flex-row w-[80%] h-full overflow-x-auto scroll-smooth">
+                <img :src="img.big"  v-for="(img ,index) in images" :key="index" class="w-[400px] h-full">
             </div>
-            <div class="w-full h-[250px] overflow-auto inline">
-                <img v-for="(img ,index) in images" :key="index" @click="activateImage(index)" :src="img.big" :class="['inline cursor-pointer w-[250px] h-full', (activeImage == index) ? 'opacity-90' : '']">
+                <div class="w-[10%] h-full bg-gray-100 cursor-pointer flex justify-center items-center group hover:bg-gray-200" @click="scroll_right()"><span><i class="fa fa-angle-right group-hover:text-4xl text-2xl font-bold"></i></span></div>
             </div>
         </div>
     </div>
@@ -176,10 +175,15 @@ export default {
                 tage:'',
                 tgender:'',
                 tname:'',
-                tid:''
+                tid:'',
+            
         }
     },
+    watch: {
+  
+},
     computed : {
+  
         dropt(){
 
             if(this.tage === '' && this.tgender === '' && this.tname === '' && this.tid === ''){
@@ -208,6 +212,15 @@ export default {
     }
     },
     methods :{
+        scroll_left() {
+  let content = document.querySelector(".hussam");
+  content.scrollLeft -= 900;
+        },
+
+scroll_right() {
+  let content = document.querySelector(".hussam");
+  content.scrollLeft += 900;
+},
         next(){
             var active=this.activeImage +1;
             if(active >= this.images.length){
