@@ -78,7 +78,7 @@
         <div class="flex items-center mx-1 px-2 font-bold text-lg whitespace-nowrap">16 Aprail at 12:23 Am</div>
         </div>
         <div class="bg-white border-b border-gray-200 flex flex-row justify-between py-4 hover:bg-gray-100">
-        <div class="w-[30px] mx-1 h-[50px] flex items-center"><input type="checkbox" class="w-[16px] h-[16px]"></div>
+        <div class="w-[30px] mx-1 h-[50px] flex items-center"><input type="checkbox" class="w-[16px] bg-blue-500 h-[16px] text-blue-500"></div>
         <div class="flex items-center"><button><i class="fa fa-star-o hover:text-yellow-500 font-bold text-xl"></i></button></div>
         <div class="flex items-center px-2"><img :src="img" class="w-[45px] h-[45px] rounded-full mx-1"><p class="font-bold text-lg text-gray-900">OneForShop</p></div>
         <div class="flex items-center mx-1 px-2 font-bold text-lg whitespace-nowrap"><p>This message From Me To Your erfect Website Design Welcome</p></div>
